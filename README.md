@@ -5,6 +5,6 @@
 
 Date | Deliverable |
 --------|-------- |
-21 March | What is Q-learning? Blog |
+30 March | "What is Q-learning?" blog |
 
 ## 
