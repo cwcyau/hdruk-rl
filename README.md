@@ -1,4 +1,4 @@
-# HDRUK Reinforcement Learning Spring Project
+# HDRUK-Turing Reinforcement Learning Project
 
 ## Project Overview
 
