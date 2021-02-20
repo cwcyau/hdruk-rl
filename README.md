@@ -31,6 +31,17 @@ Following your reading:
 1. Create and implement a simple simulation of a Markov decision process. Use this simulator to produce synthetic datasets for later use.
 2. Implement a statistical inference algorithm for a multi-state regression model. You may test this using the synthetic data in Step 1.
 
+### Q-learning
+
+Q-learning is one of the most common RL approaches to solve MDP problems. After reading, conduct the following:
+
+1. Implement a Q-learning algorithm to estimate the optimal policy. 
+2. Apply to the synthetic dataset you produced previously. Did you recover the policy you used?
+
+### Deep reinforcement learning
+
+
+
 ## Milestones
 
 Date    | Deliverable |
