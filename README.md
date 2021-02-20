@@ -18,6 +18,16 @@ Aims:
 
 If time allows, application to real world datasets will be undertaken but this is principally a methodological learning and development project. You will therefore be guided to develop skills in generating suitable artificial but real-world inspired data sets for model development.
 
+## Project Tasks
+
+### Multi-state regression models
+
+### Markov decision processes
+
+An understanding of Markov decision processes (MDP) is vital for the study of reinforcement learning. Following your reading on the topic:
+
+1. Implement a simple 
+
 ## Milestones
 
 Date    | Deliverable |
