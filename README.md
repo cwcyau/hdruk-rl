@@ -20,13 +20,16 @@ If time allows, application to real world datasets will be undertaken but this i
 
 ## Project Tasks
 
-### Multi-state regression models
+### Underpinning statistical modelling
 
-### Markov decision processes
+There are two important statistical frameworks to be understood in this project: *Multi-state regression models* (MSM) and *Markov decision processes* (MDP).
 
-An understanding of Markov decision processes (MDP) is vital for the study of reinforcement learning. Following your reading on the topic:
+An understanding of MDPs is vital for the study of reinforcement learning while MSMs are a useful statistical framework for multimorbidity. 
 
-1. Implement a simple 
+Following your reading:
+
+1. Create and implement a simple simulation of a Markov decision process. Use this simulator to produce synthetic datasets for later use.
+2. Implement a statistical inference algorithm for a multi-state regression model. You may test this using the synthetic data in Step 1.
 
 ## Milestones
 
