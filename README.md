@@ -52,6 +52,7 @@ Policy gradient approaches give rise to stochastic policies (distributions over 
 
 Once you have developed (or in parallel) a strong understanding of these fundamental RL concepts, we will turn our attention to reformulating the multimorbidity problem in a form which is amenable to RL. However, there is no pressure for you to reach this stage during this project, the most vital thing is that you acquire a deep understanding of the theoretical concepts and the detailed implementation knowledge to code these methods up.
 
+
 ![Multimorbidity](mdp.png "Multi-state model for multimorbidity")
 
 ## Milestones
