@@ -48,9 +48,9 @@ Policy gradient approaches give rise to stochastic policies (distributions over 
 2. Apply to the synthetic dataset you produced previously. Did you recover the policy you used?
 3. Can you extend the technique to use an actor-critic approach?
 
-### Going beyond
+### Going beyond and in parallel
 
-Once you have developed a strong understanding of these fundamental RL concepts, we will turn our attention to reformulating the multimorbidity problem in a form which is amenable to RL. However, there is no pressure for you to reach this stage during this project, the most vital thing is that you acquire a deep understanding of the theoretical concepts and the detailed implementation knowledge to code these methods up.
+Once you have developed (or in parallel) a strong understanding of these fundamental RL concepts, we will turn our attention to reformulating the multimorbidity problem in a form which is amenable to RL. However, there is no pressure for you to reach this stage during this project, the most vital thing is that you acquire a deep understanding of the theoretical concepts and the detailed implementation knowledge to code these methods up.
 
 ## Milestones
 
