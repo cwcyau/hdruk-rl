@@ -10,7 +10,7 @@ Multimorbidity refers to the conditions of individuals having multiple disease c
 
 Aims:
 
-1. To develop an understanding of reinforcement learning and the various learning paradigms (e.g. actor-critic, Q-learning) and the deep RL extensions.
+1. To develop an understanding of reinforcement learning and the various learning paradigms (e.g. policy gradient, actor-critic, Q-learning) and the deep RL extensions.
 
 2. To understand the problem of multimorbidity trajectory modelling and the utility of multi-state models.
 
@@ -29,18 +29,28 @@ An understanding of MDPs is vital for the study of reinforcement learning while 
 Following your reading:
 
 1. Create and implement a simple simulation of a Markov decision process. Use this simulator to produce synthetic datasets for later use.
-2. Implement a statistical inference algorithm for a multi-state regression model. You may test this using the synthetic data in Step 1.
+2. [Optional] Implement a statistical inference algorithm for a multi-state regression model. You may test this using the synthetic data in Step 1.
 
-### Q-learning
+### Basic RL algorithms
 
-Q-learning is one of the most common RL approaches to solve MDP problems. After reading, conduct the following:
+There are a range of classic RL approaches and it can be challenging to categorise the different variants. A useful differentiator is those techniques that yield *deterministic* or *stochastic* policies which lead to value-based or policy gradient techniques.  
+
+Q-learning is one of the most common RL approaches to solve MDP problems which leads to deterministic policies. After reading, conduct the following:
 
 1. Implement a Q-learning algorithm to estimate the optimal policy. 
 2. Apply to the synthetic dataset you produced previously. Did you recover the policy you used?
 
-### Deep reinforcement learning
+In order to understand Q-learning, you will need to focus on the concepts of exploration and exploitation.
 
+Policy gradient approaches give rise to stochastic policies (distributions over actions). These are naturally quite attractive but have some difficulties which have led to the development of so-called *actor-critic* methods.
 
+1. Implement a policy gradient algorithm to estimate an optimal stochastic policy. 
+2. Apply to the synthetic dataset you produced previously. Did you recover the policy you used?
+3. Can you extend the technique to use an actor-critic approach?
+
+### Going beyond
+
+Once you have developed a strong understanding of these fundamental RL concepts, we will turn our attention to reformulating the multimorbidity problem in a form which is amenable to RL. However, there is no pressure for you to reach this stage during this project, the most vital thing is that you acquire a deep understanding of the theoretical concepts and the detailed implementation knowledge to code these methods up.
 
 ## Milestones
 
@@ -48,5 +58,6 @@ Date    | Deliverable |
 --------|-------------|
 14 March | Simulations of Markov decision processes |
 30 March | "What is Q-learning?" blog |
+30 April | "What is actor-critic based learning?" blog |
 
 ## 
