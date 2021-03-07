@@ -10,7 +10,7 @@ Multimorbidity refers to the conditions of individuals having multiple disease c
 
 Aims:
 
-1. To develop an understanding of reinforcement learning and the various learning paradigms (e.g. policy gradient, actor-critic, Q-learning) and the deep RL extensions.
+1. To develop an understanding of reinforcement learning and the various learning paradigms (e.g. policy gradients, actor-critic, Q-learning) and deep RL extensions.
 
 2. To understand the problem of multimorbidity trajectory modelling and the utility of multi-state models.
 
@@ -20,7 +20,7 @@ If time allows, application to real world datasets will be undertaken but this i
 
 ## Project Tasks
 
-### Underpinning statistical modelling
+### Underpinning statistical models
 
 There are two important statistical frameworks to be understood in this project: *Multi-state regression models* (MSM) and *Markov decision processes* (MDP).
 
@@ -29,7 +29,8 @@ An understanding of MDPs is vital for the study of reinforcement learning while 
 Following your reading:
 
 1. Create and implement a simple simulation of a Markov decision process. Use this simulator to produce synthetic datasets for later use.
-2. [Optional] Implement a statistical inference algorithm for a multi-state regression model. You may test this using the synthetic data in Step 1.
+2. Consider the constraints on the number of disease, disease co-occurrence (or correlation) structures and time dependence that maybe required for multimorbidity. What might suitable *rewards* look like?
+3. [Optional] Implement a statistical inference algorithm for a multi-state regression model. You may test this using the synthetic data in Step 1.
 
 ### Basic RL algorithms
 
@@ -48,14 +49,19 @@ Policy gradient approaches give rise to stochastic policies (distributions over 
 2. Apply to the synthetic dataset you produced previously. Did you recover the policy you used?
 3. Can you extend the technique to use an actor-critic approach?
 
-### Going beyond and in parallel
+### Retrospective data modelling
 
 Once you have developed (or in parallel) a strong understanding of these fundamental RL concepts, we will turn our attention to reformulating the multimorbidity problem in a form which is amenable to RL. However, there is no pressure for you to reach this stage during this project, the most vital thing is that you acquire a deep understanding of the theoretical concepts and the detailed implementation knowledge to code these methods up.
 
+The key challenge to address is how to utilise RL for retrospective data analysis rather than live, dynamics situations (e.g. game play). There are new emerging sub-fields of RL (e.g. *batch reinforcement learning*) which are bringing substantial ideas into this space but very few address health data research issues.
+
+In a multi-state model of multiple disease conditions, a patient's current health state is given by a binary vector whose elements correspond to a different disease condition and are 1 if the individual possesses that condition and zero otherwise. Over time (e.g. as a function of a person's age), they may acquire (or lose) conditions. A natural approach to modelling the time evolution of the health states is to use a Markov chain but in practice the list of possible disease conditions could be on the order of 40-80 and so inference for such a large state-space is non-trivial.   
 
 ![Multimorbidity](mdp.jpg "Multi-state model for multimorbidity")
 
 ## Milestones
+
+In addition to the overall spring project milestones:
 
 Date    | Deliverable |
 --------|-------------|
