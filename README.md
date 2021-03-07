@@ -55,11 +55,13 @@ Once you have developed (or in parallel) a strong understanding of these fundame
 
 The key challenge to address is how to utilise RL for retrospective data analysis rather than live, dynamics situations (e.g. game play). There are new emerging sub-fields of RL (e.g. *batch reinforcement learning*) which are bringing substantial ideas into this space but very few address health data research issues.
 
-In a multi-state model of multiple disease conditions, a patient's current health state is given by a binary vector whose elements correspond to a different disease condition and are 1 if the individual possesses that condition and zero otherwise. Over time (e.g. as a function of a person's age), they may acquire (or lose) conditions. A natural approach to modelling the time evolution of the health states is to use a Markov chain but in practice the list of possible disease conditions could be on the order of 40-80 and inference for such a large state-space is non-trivial. 
+In a multi-state model of multiple disease conditions, a patient's current health state is given by a binary vector whose elements correspond to a different disease condition and are 1 if the individual possesses that condition and zero otherwise. Over time (e.g. as a function of a person's age), they may acquire (or lose) conditions. A natural approach to modelling the time evolution of the health states is to use a Markov chain (MC) but in practice the list of possible disease conditions could be on the order of 40-80 and inference for such a large state-space is non-trivial. 
 
-In this project, we will consider how we can exploit the fact that a Markov decision process, together with an optimal policy, collapses to a Markov chain. This representation allows us to rethink Markov chain problems in terms of solving MDPs and learning policies.
+In this project, we will consider how we can exploit the fact that a Markov decision process, together with an optimal policy, collapses to a Markov chain. This representation allows us to rethink Markov chain problems in terms of solving MDPs and learning policies. Consider the following:
 
 ![Multimorbidity](mdp.jpg "Multi-state model for multimorbidity")
+
+Here, the actions are to add or remove a disease or remain unchanged. The question is what is the appropriate reward function to be employed if we want to find a policy that converts this MDP into an appropriate MC for multimorbidity?
 
 ## Milestones
 
