@@ -66,7 +66,7 @@ Here, the actions are to add or remove a disease or remain unchanged. Question w
 
 1. What is the appropriate reward function to be employed if we want to find a policy that converts this MDP into an appropriate MC for multimorbidity?
 2. Given a set of observed health states for patients of a given age, what is the policy/reward function that best gives rise to this data (assuming all patients start with no disease)?
-3. How might we integrate simple models of treatment effects?
+3. How might we integrate simple models of treatment effects? This might need to actions that do not specifically inform states.
 
 ## Milestones
 
