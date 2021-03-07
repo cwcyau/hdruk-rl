@@ -59,7 +59,8 @@ In a multi-state model of multiple disease conditions, a patient's current healt
 
 In this project, we will consider how we can exploit the fact that a Markov decision process, together with an optimal policy, collapses to a Markov chain. This representation allows us to rethink Markov chain problems in terms of solving MDPs and learning policies. Consider the following:
 
-![Multimorbidity](mdp.jpg "Multi-state model for multimorbidity")
+<img src="https://github.com/cwcyau/hdruk-rl/blob/b2e63dc4b1da784098555c77d70019a553c5b26b/mdp.jpg" width=50% height=50%>
+
 
 Here, the actions are to add or remove a disease or remain unchanged. The question is what is the appropriate reward function to be employed if we want to find a policy that converts this MDP into an appropriate MC for multimorbidity?
 
